@@ -28,4 +28,4 @@ A simple C++ console application for managing student records. This program allo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/student-record-system.git
+   git clone https://github.com/TimNieto/Student-Record-Management-System-in-C-.git
