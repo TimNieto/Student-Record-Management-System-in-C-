@@ -4,27 +4,34 @@ A simple C++ console application for managing student records. This program allo
 
 ## Features
 
-* Add new student records with:
+- Add new student records
+- Search for a student by ID or full name
+- Display all student records
+- Display a specific student record
+- Delete a student record
+- Prevent duplicate student IDs
+- Validate user input
+- Handle empty record lists
+- Menu-driven console interface
 
-  * Student ID
-  * Full Name
-  * Birthday
-  * Address
-  * Gender
-  * Degree Program
-  * Year Level
-* Search for a student by ID or full name
-* Display all student records
-* Display a specific student record
-* Delete a student record
-* Simple menu-driven console interface
+## Student Information Stored
+
+Each student record includes:
+
+- Student ID
+- Full Name
+- Birthday
+- Address
+- Gender
+- Degree Program
+- Year Level
 
 ## Technologies Used
 
-* C++
-* C++ Standard Library
-* Vector for storing student records
-* Console-based input and output
+- C++
+- C++ Standard Library
+- Vector
+- Console-based input and output
 
 ## Getting Started
 
@@ -32,13 +39,11 @@ A simple C++ console application for managing student records. This program allo
 
 Make sure you have a C++ compiler installed.
 
-For example, you can use:
+Example:
 
-* g++
-* MinGW
-* Visual Studio Code with a C++ compiler
-* Code::Blocks
-* Dev-C++
+```bash
+g++
+```
 
 ## Installation and Usage
 
@@ -57,15 +62,15 @@ cd Student-Record-Management-System-in-C-
 3. Compile the program:
 
 ```bash
-g++ NIETO_FinalExam.cpp -o student_records
+g++ student_record_system.cpp -o student_records
 ```
 
 4. Run the program:
 
-For Windows:
+For Windows PowerShell:
 
 ```bash
-student_records.exe
+.\student_records.exe
 ```
 
 For macOS or Linux:
@@ -74,44 +79,42 @@ For macOS or Linux:
 ./student_records
 ```
 
+## Sample Output
+
+![Sample Output](assets/sample-output.png)
+
+![Sample Output 2](assets/sample-output2.png)
+
+![Sample Output 3](assets/sample-output3.png)
+
 ## How It Works
 
-After running the program, a menu will appear in the console. The user can choose from the available options to add, search, display, or delete student records.
+After running the program, the user can choose from the menu options to add, search, display, or delete student records.
 
-The records are stored temporarily while the program is running. Once the program is closed, the records will not be saved permanently.
-
-## Sample Menu
-
-```text
-STUDENT RECORD MANAGEMENT SYSTEM
-
-1. Add Student Record
-2. Search Student Record
-3. Display All Records
-4. Display Specific Record
-5. Delete Student Record
-6. Exit
-```
+The program stores records temporarily while it is running. Once the program is closed, the records are not saved permanently.
 
 ## Project Structure
 
 ```text
 Student-Record-Management-System-in-C-
 │
-├── NIETO_FinalExam.cpp
+├── assets
+│   ├── sample-output.png
+│   ├── sample-output2.png
+│   └── sample-output3.png
+├── student_record_system.cpp
 ├── README.md
 └── .gitignore
 ```
 
 ## Future Improvements
 
-* Add file handling to save and load student records
-* Add an option to update existing student records
-* Prevent duplicate student IDs
-* Improve input validation
-* Add sorting by student ID or name
-* Add case-insensitive search
-* Improve code organization using separate functions or classes
+- Add file handling to save and load student records
+- Add an option to update existing student records
+- Add sorting by student ID or name
+- Add case-insensitive search
+- Improve the user interface
+- Organize the program using classes
 
 ## License
 
