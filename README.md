@@ -1,6 +1,6 @@
 # Student Record Management System in C++
 
-A simple C++ console application for managing student records. This program allows users to add, search, display, and delete student information using a menu-driven interface.
+A C++ console-based student record management system for adding, searching, displaying, and deleting student information using a menu-driven interface.
 
 ## Features
 
@@ -8,7 +8,7 @@ A simple C++ console application for managing student records. This program allo
 - Search for a student by ID or full name
 - Display all student records
 - Display a specific student record
-- Delete a student record
+- Delete student records
 - Prevent duplicate student IDs
 - Validate user input
 - Handle empty record lists
@@ -19,12 +19,12 @@ A simple C++ console application for managing student records. This program allo
 Each student record includes:
 
 - Student ID
-- Full Name
+- Full name
 - Birthday
 - Address
 - Gender
-- Degree Program
-- Year Level
+- Degree program
+- Year level
 
 ## Technologies Used
 
@@ -33,43 +33,47 @@ Each student record includes:
 - Vector
 - Console-based input and output
 
-## Getting Started
+## Project Structure
 
-### Prerequisites
-
-Make sure you have a C++ compiler installed.
-
-Example:
-
-```bash
-g++
+```text
+student-record-management-system-cpp/
+├── .gitignore
+├── README.md
+├── assets/
+│   ├── sample-output.png
+│   ├── sample-output2.png
+│   └── sample-output3.png
+└── student_record_system.cpp
 ```
 
-## Installation and Usage
+## How to Run
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/TimNieto/Student-Record-Management-System-in-C-.git
-```
-
-2. Go to the project folder:
+### Clone the Repository
 
 ```bash
-cd Student-Record-Management-System-in-C-
+git clone https://github.com/TimNieto/student-record-management-system-cpp.git
+cd student-record-management-system-cpp
 ```
 
-3. Compile the program:
+### Compile
+
+For Windows PowerShell:
+
+```powershell
+g++ .\student_record_system.cpp -o .\student_records.exe
+```
+
+For macOS or Linux:
 
 ```bash
 g++ student_record_system.cpp -o student_records
 ```
 
-4. Run the program:
+### Run
 
 For Windows PowerShell:
 
-```bash
+```powershell
 .\student_records.exe
 ```
 
@@ -92,20 +96,6 @@ For macOS or Linux:
 After running the program, the user can choose from the menu options to add, search, display, or delete student records.
 
 The program stores records temporarily while it is running. Once the program is closed, the records are not saved permanently.
-
-## Project Structure
-
-```text
-Student-Record-Management-System-in-C-
-│
-├── assets
-│   ├── sample-output.png
-│   ├── sample-output2.png
-│   └── sample-output3.png
-├── student_record_system.cpp
-├── README.md
-└── .gitignore
-```
 
 ## Future Improvements
 
